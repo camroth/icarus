@@ -15,6 +15,7 @@
 		BD8C6BD624E23658001D7E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8C6BD424E23658001D7E94 /* LaunchScreen.storyboard */; };
 		BD8C6BE124E23659001D7E94 /* IcarusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C6BE024E23659001D7E94 /* IcarusTests.swift */; };
 		BD8C6BEC24E238DF001D7E94 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C6BEB24E238DF001D7E94 /* Die.swift */; };
+		BD8C6BEE24E23C13001D7E94 /* DieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8C6BED24E23C13001D7E94 /* DieTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		BD8C6BE024E23659001D7E94 /* IcarusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcarusTests.swift; sourceTree = "<group>"; };
 		BD8C6BE224E23659001D7E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8C6BEB24E238DF001D7E94 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		BD8C6BED24E23C13001D7E94 /* DieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				BD8C6BE024E23659001D7E94 /* IcarusTests.swift */,
+				BD8C6BED24E23C13001D7E94 /* DieTests.swift */,
 				BD8C6BE224E23659001D7E94 /* Info.plist */,
 			);
 			path = IcarusTests;
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8C6BEE24E23C13001D7E94 /* DieTests.swift in Sources */,
 				BD8C6BE124E23659001D7E94 /* IcarusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

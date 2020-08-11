@@ -15,7 +15,12 @@ public final class Die {
   public let numberOfSides: NSInteger
 
   /// Die() = Die(numberOfSides: 6) = 6 sided die
-  init(numberOfSides: NSInteger = 6) {
+  init?(numberOfSides: NSInteger = 6) {
+    guard numberOfSides > 0 else {
+      print("Fuck no, try again")
+      return nil
+    }
+
     self.numberOfSides = numberOfSides
   }
 }
