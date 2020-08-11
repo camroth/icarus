@@ -36,15 +36,28 @@ class DieTests: XCTestCase {
     if let d20 = Die(numberOfSides: 20) {
       XCTAssertEqual(d20.numberOfSides, 20)
 
+      // var                      = Define a _var_iable value we can mutate
+      // rolls                    = the name of the variable
+      // [NSInteger: NSInteger]   = this dictionary will represent a key/value store of an
+      //                            NSInteger as the key to an NSInteger as the value
+      // = [:] 	                  = set this to be an empty dictionary right now
+      //                            (nil keys, nil values)
       var rolls: [NSInteger: NSInteger] = [:]
 
+      // for            = do this this many times
+      // _              = make the current value of the loop anonymous because we don't care
+      //                  about its actual value/we don't need to use which iteration we're on
+      // in 1...1000000 = start at 1 and continue up to and including 1000000 (vs. ..< which
+      //                  would be up to and not including 1000000)
       for _ in 1...1000000 {
         let rollValue = d20.roll()
+        // Verify we did not roll a 0
         XCTAssertGreaterThan(rollValue, 0)
+        // Verify we did not roll greater than the biggest number on the die
         XCTAssertLessThanOrEqual(rollValue, d20.numberOfSides)
 
-        // Look up the number of previous rolls with the same value
-        // ?? 0 == default to 0 if no previous rolls with this value are found
+        // Look up the number of previous rolls with the same value (?? 0 = default to 0 if no
+        // previous rolls with this value are found
         let numberOfRollsWithSameValue = rolls[rollValue] ?? 0
         rolls[rollValue] = numberOfRollsWithSameValue + 1
       }

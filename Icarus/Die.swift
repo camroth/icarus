@@ -8,7 +8,9 @@
 
 import Foundation
 
-/// A die to be rolled that will return a random number between 1 and the number of sides
+/// A die to be rolled that will return a random number between 1 and the number of sides.
+/// - Note: Will *not* return a die with 0 sides
+/// - Note: Will *not* return a die with an odd number of sides
 public final class Die {
 
   /// The number of sides the die can have.
