@@ -49,7 +49,20 @@ class DieTests: XCTestCase {
         rolls[rollValue] = numberOfRollsWithSameValue + 1
       }
 
-      // print("\(rolls)")
+      // Let's verify that we got at least one 1 (it's possible we _may not have_, and that
+      // that "key" in the dictionary doesn't exist, so we need to default to 0 if we don't
+      // find any)
+      XCTAssertGreaterThan(rolls[1] ?? 0, 0)
+
+      // Let's verify that we got at least one 20 (it's possible we _may not have_, and that
+      // that "key" in the dictionary doesn't exist, so we need to default to 0 if we don't
+      // find any)
+      XCTAssertGreaterThan(rolls[d20.numberOfSides] ?? 0, 0)
+
+      // Nicely and sortedly print out the rolled values
+      for i in 1...d20.numberOfSides {
+        print("Rolled \(rolls[i] ?? 0) \(i)s")
+      }
     }
   }
 

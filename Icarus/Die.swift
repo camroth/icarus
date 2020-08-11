@@ -33,6 +33,6 @@ public final class Die {
   /// Returns a number between 1 and the number of sides, inclusive.
   /// For example, a 6 sided die could return the numbers 1, 2, 3, 4, 5 and 6
   public func roll() -> NSInteger {
-    return Int.random(in: 1..<numberOfSides)
+    return Int.random(in: 1...numberOfSides)
   }
 }
