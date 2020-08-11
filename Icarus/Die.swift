@@ -29,4 +29,8 @@ public final class Die {
     print("Created die with \(numberOfSides) number of sides")
     self.numberOfSides = numberOfSides
   }
+
+  public func roll() -> NSInteger {
+    return Int.random(in: 1..<numberOfSides)
+  }
 }
