@@ -12,5 +12,10 @@ import Foundation
 public final class Die {
 
   /// The number of sides the die can have.
-  public let numberOfSides: NSInteger = 6
+  public let numberOfSides: NSInteger
+
+  /// Die() = Die(numberOfSides: 6) = 6 sided die
+  init(numberOfSides: NSInteger = 6) {
+    self.numberOfSides = numberOfSides
+  }
 }
