@@ -74,7 +74,8 @@ class DieTests: XCTestCase {
 
       // Nicely and sortedly print out the rolled values
       for i in 1...d20.numberOfSides {
-        print("Rolled \(rolls[i] ?? 0) \(i)s")
+        let numberOfRollsWithValue = rolls[i] ?? 0
+        print("Rolled \(numberOfRollsWithValue) \(i)s")
       }
     }
   }
