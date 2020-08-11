@@ -21,6 +21,12 @@ public final class Die {
       return nil
     }
 
+    guard numberOfSides % 2 == 0 else {
+      print("Odd sided die")
+      return nil
+    }
+
+    print("Created die with \(numberOfSides) number of sides")
     self.numberOfSides = numberOfSides
   }
 }
