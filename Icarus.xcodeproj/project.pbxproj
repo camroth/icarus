@@ -136,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				BD8C6BC824E23656001D7E94 /* Icarus */,
+				BD04C3EF24E4ED0C0071C194 /* Resources */,
 				BD8C6BDF24E23659001D7E94 /* IcarusTests */,
 				BD8C6BC724E23656001D7E94 /* Products */,
 			);
@@ -155,7 +156,6 @@
 			children = (
 				BD8C6BC924E23656001D7E94 /* AppDelegate.swift */,
 				BD8C6BCB24E23656001D7E94 /* SceneDelegate.swift */,
-				BD04C3EF24E4ED0C0071C194 /* Resources */,
 				BD8C6BCD24E23656001D7E94 /* ViewController.swift */,
 				BD8C6BCF24E23656001D7E94 /* Main.storyboard */,
 				BD8C6BEB24E238DF001D7E94 /* Die.swift */,
